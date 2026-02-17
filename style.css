@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-image: linear-gradient(#fa8383e5), url(proimgfold/firstpro1.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  color: white;
+}
+
+.left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.right {
+  flex: 1;
+}
+
+.top-box {
+  background-color: #5e54a4;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+
+.form-side {
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 50px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-group.error input {
+  border: 1px solid hsl(0, 100%, 74%);
+  background-color: white;
+  background-image: url("icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px;
+}
+
+.input-group.error input::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+.error-text {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 6px;
+  display: none;
+}
+
+.input-group.error .error-text {
+  display: block;
+}
+
+button {
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #38cc8c;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2ebf7c;
+}
+
+.small {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding-top: 10px;
+}
+
+.small span {
+  color: #f46b6b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
