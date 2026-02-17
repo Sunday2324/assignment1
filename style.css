@@ -6,7 +6,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-
   background-image: linear-gradient(#fa8383e5), url(proimgfold/firstpro1.jpeg);
   display: flex;
   justify-content: center;
@@ -144,9 +143,8 @@ button:hover {
     width: 100%;
   }
   body {
-    padding: 30px;
+    padding:20px;
     margin: 0;
     box-sizing: border-box;
   }
-
 }
